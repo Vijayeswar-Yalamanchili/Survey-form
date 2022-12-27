@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form>
+        <div class="top-Section">                          
+            <div class="topsection-1">
+                <label for="title"><strong>Name<span class ="asterisk">&#42;</span></strong></label>
+                <div class="name" style=" padding-top: 10px;">
+                    <input required type="text" id="fname" name="fname" placeholder="Name">
+                    <input required type="text" id="lname" name="lname" placeholder="Surname">
+                </div>            
+            </div>                  
+            <div class="topsection-2">
+                <label for="title-secondary"><strong>Email<span class ="asterisk">&#42;</span></strong></label>
+                <div style="padding-top: 10px;"><input required type="email" id="email" placeholder="Enter your email Id"></div>
+            </div>
+            <div class="topsection-3">
+                <h2 style="padding-bottom: 10px;">Experience with us<span class ="asterisk">&#42;</span></h2>
+                <span class="fa fa-star checked" style="font-size:30px"></span>
+                <span class="fa fa-star checked" style="font-size:30px"></span>
+                <span class="fa fa-star checked" style="font-size:30px"></span>
+                <span class="fa fa-star" style="font-size:30px"></span>
+                <span class="fa fa-star" style="font-size:30px"></span>
+                <p style="padding-top: 10px;">Overall, how would you rate your experience with us?</p>
+            </div>                              
+        </div>
+        <div class="mid-section">            
+            <label for="rating" class="rating1"><b>How satisfied are you with<span class ="asterisk">&#42;</span></b></label>
+            <div>
+                <div class="rating-category">
+                    <div class="pvalue1">Very Unsatisfied</div>
+                    <div class="pvalue2">Unsatisfied</div>
+                    <div class="pvalue3">Neutral</div>
+                    <div class="pvalue4">Satisfied</div>
+                    <div class="pvalue5">Very Satisfied</div>              
+                </div>
+                <div class="purchase-bar">
+                    <div class="p-block">
+                        <div class="purchase">Purchase</div>
+                        <div class="p-radios">                 
+                            <div><input required type="radio" id="p-radio1"></div>
+                            <div><input required type="radio" id="p-radio2"></div>
+                            <div><input required type="radio" id="p-radio3"></div>
+                            <div><input required type="radio" id="p-radio4"></div>
+                            <div><input required type="radio" id="p-radio5"></div>
+                        </div>
+                        <div>
+                        <select name="Rating" id="rating-select">
+                            <option value="volvo">Very Satisfied</option>
+                            <option value="saab">Satisfied</option>
+                            <option value="mercedes">Neutral</option>
+                            <option value="audi">Unsatisfied</option>
+                            <option value="audi">Very Unsatisfied</option>
+                        </select>
+                    </div>
+                    </div>
+                </div>
+                <div class="service-bar">
+                    <div class="s-block">
+                        <div class="service">Service</div>
+                        <div class="s-radios">                        
+                            <div><input required type="radio" id="s-radio1"></div>
+                            <div><input required type="radio" id="s-radio2"></div>
+                            <div><input required type="radio" id="s-radio3"></div>
+                            <div><input required type="radio" id="s-radio4"></div>
+                            <div><input required type="radio" id="s-radio5"></div>
+                        </div>
+                        <select name="Rating" id="rating-select1">
+                            <option value="volvo">Very Satisfied</option>
+                            <option value="saab">Satisfied</option>
+                            <option value="mercedes">Neutral</option>
+                            <option value="audi">Unsatisfied</option>
+                            <option value="audi">Very Unsatisfied</option>
+                        </select>          
+                    </div>
+                </div>
+                <div class="companyoverall-bar">
+                    <div class="companyoverall-block">
+                        <div class="companyoverall">Company Overall</div>
+                        <div class="co-radios">                        
+                            <div><input required type="radio" id="co-radio1"></div>
+                            <div><input required type="radio" id="co-radio2"></div>
+                            <div><input required type="radio" id="co-radio3"></div>
+                            <div><input required type="radio" id="co-radio4"></div>
+                            <div><input required type="radio" id="co-radio5"></div>
+                        </div>
+                        <select name="Rating" id="rating-select">
+                            <option value="volvo">Very Satisfied</option>
+                            <option value="saab">Satisfied</option>
+                            <option value="mercedes">Neutral</option>
+                            <option value="audi">Unsatisfied</option>
+                            <option value="audi">Very Unsatisfied</option>
+                        </select>           
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-section">            
+            <label for="rating" class="rating1"><b>How satisfied are you with<span class ="asterisk">&#42;</span></b></label>
+            <div>
+                <div class="rating-category">
+                    <div class="pvalue1">Very Unsatisfied</div>
+                    <div class="pvalue2">Unsatisfied</div>
+                    <div class="pvalue3">Neutral</div>
+                    <div class="pvalue4">Satisfied</div>
+                    <div class="pvalue5">Very Satisfied</div>              
+                </div>                
+                <div class="buy-bar">
+                    <div class="buy-block">
+                        <div class="buy">Buy from us again</div>
+                        <div class="buy-radios">                 
+                            <div><input required type="radio" id="buy-radio1"></div>
+                            <div><input required type="radio" id="buy-radio2"></div>
+                            <div><input required type="radio" id="buy-radio3"></div>
+                            <div><input required type="radio" id="buy-radio4"></div>
+                            <div><input required type="radio" id="buy-radio5"></div>
+                        </div>
+                        <select name="Rating" id="rating-select">
+                            <option value="volvo">Very Satisfied</option>
+                            <option value="saab">Satisfied</option>
+                            <option value="mercedes">Neutral</option>
+                            <option value="audi">Unsatisfied</option>
+                            <option value="audi">Very Unsatisfied</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="rec-prdt-bar">
+                    <div class="rec-prdt-block">
+                        <div class="rec-prdt">Recommend our product to others</div>
+                        <div class="rec-prdt-radios">                        
+                            <div><input required type="radio" id="rec-prdt-radio1"></div>
+                            <div><input required type="radio" id="rec-prdt-radio2"></div>
+                            <div><input required type="radio" id="rec-prdt-radio3"></div>
+                            <div><input required type="radio" id="rec-prdt-radio4"></div>
+                            <div><input required type="radio" id="rec-prdt-radio5"></div>
+                        </div> 
+                        <select name="Rating" id="rating-select1">
+                            <option value="volvo">Very Satisfied</option>
+                            <option value="saab">Satisfied</option>
+                            <option value="mercedes">Neutral</option>
+                            <option value="audi">Unsatisfied</option>
+                            <option value="audi">Very Unsatisfied</option>
+                        </select>           
+                    </div>
+                </div>
+                <div class="rec-company-bar">
+                    <div class="rec-company-block">
+                        <div class="rec-company">Recommend our company to others</div>
+                        <div class="rec-company-radios">                        
+                            <div><input required type="radio" id="rec-company-radio1"></div>
+                            <div><input required type="radio" id="rec-company-radio2"></div>
+                            <div><input required type="radio" id="rec-company-radio3"></div>
+                            <div><input required type="radio" id="rec-company-radio4"></div>
+                            <div><input required type="radio" id="rec-company-radio5"></div>
+                        </div> 
+                        <select name="Rating" id="rating-select">
+                            <option value="volvo">Very Satisfied</option>
+                            <option value="saab">Satisfied</option>
+                            <option value="mercedes">Neutral</option>
+                            <option value="audi">Unsatisfied</option>
+                            <option value="audi">Very Unsatisfied</option>
+                        </select>           
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <label for="footer"><b>Additional comments or suggestions</b></label>
+            <div><textarea id="comments" name="w3review" rows="4" cols="50"></textarea></div>
+            <div><input type="button" id="submit-btn" value="Submit"></div>
+        </footer>
+    </form>
+</body>
+</html>
